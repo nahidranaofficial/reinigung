@@ -1,0 +1,86 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                    kunden part start
+======================================================*/
+#kunden {
+    padding: 60px 0;
+
+    .common_heading {
+        text-align: center;
+
+        h2 {
+            @include fns($clr1, 28px, 700, $ff1);
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fns(#fff, 16px, 400, $ff1);
+            padding-bottom: 20px;
+        }
+    }
+
+    .box_top {
+        background: rgba(27, 173, 207, 0.3);
+        padding: 36px 20px 45px;
+        height: 216px;
+        margin-bottom: 34px;
+        margin-top: 23px;
+
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+
+                i {
+                    margin-right: 15px;
+                    color: $clr1;
+                    font-size: 20px
+                }
+
+                p {
+                    @include fns(#fff, 16px, 400, $ff1);
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+
+    .box_bottom {
+        text-align: center;
+        background: rgba(27, 173, 207, 0.3);
+        padding: 20px 65px;
+        height: 290px;
+        img {
+            width: 140px;
+        }
+
+        h3 {
+            @include fns($clr1, 24px, 500, $ff1);
+            text-transform: uppercase;
+            padding-top: 14px;
+        }
+
+        p {
+            @include fns(#fff, 20px, 400, $ff1);
+            padding-top: 5px;
+        }
+
+        a {
+            @include fns(#fff, 20px, 400, $ff1);
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+}
+
+/*======================================================
+                    kunden part end
+======================================================*/

@@ -1,0 +1,96 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                map part start
+======================================================*/
+#review {
+    padding: 70px 0;
+    background: #E9FBFF;
+
+    .common_heading {
+        margin-bottom: 30px;
+
+        h2 {
+            @include fns($clr1, 28px, 700, $ff1);
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+    .review_main {
+        position: relative;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0px 1px 15px #c6c6c6;
+
+        .logo_box {
+
+            .logo_box_left {
+                img {
+                    width: 200px;
+                }
+
+                p {
+                    @include fns($clr2, 14px, 400, $ff1);
+                    padding-left: 10px;
+                    padding-top: 7px;
+                }
+            }
+
+            .logo_box_right {
+                a {
+                    padding: 10px 15px;
+                    background: $clr1;
+                    @include fns(#fff, 18px, 400, $ff1);
+                    box-shadow: 0px 1px 15px #c6c6c6;
+                    transition: all linear .3s;
+
+                    &:hover {
+                        background: #E9FBFF;
+                        color: $clr1;
+                    }
+                }
+            }
+
+        }
+
+        .review_slider {
+            margin-top: 5px;
+
+            .review_img {
+                margin: 20px;
+                background: #000;
+
+            }
+
+            .prev_arrow,
+            .next_arrow {
+                font-size: 28px;
+                color: #444;
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                z-index: 2;
+            }
+
+            .prev_arrow {
+                left: -10px;
+            }
+
+            .next_arrow {
+                right: -10px;
+            }
+        }
+
+    }
+}
+
+/*======================================================
+                map part end
+======================================================*/

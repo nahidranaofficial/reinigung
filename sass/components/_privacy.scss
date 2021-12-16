@@ -1,0 +1,34 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                map part start
+======================================================*/
+#privacy {
+    padding: 32px 0;
+    text-align: center;
+    background: $clr1;
+
+    .privacy_text {
+        position: relative;
+
+        a {
+            @include fns(#fff, 16px, 400, $ff1);
+            padding: 0 30px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 654px;
+            width: 2px;
+            height: 25px;
+            background: #fff;
+        }
+    }
+}
+
+/*======================================================
+                map part end
+======================================================*/

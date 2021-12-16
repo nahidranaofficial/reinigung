@@ -1,0 +1,878 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Zen+Old+Mincho:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/*======================================================
+                Common css end
+======================================================*/
+/*======================================================
+                    Header part start
+======================================================*/
+.main_menu {
+  height: 60px;
+  background: rgba(27, 174, 207, 0.63);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.main_menu ul li a {
+  color: #f1f1f1;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding: 0 12px !important;
+  line-height: 60px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  position: relative;
+}
+
+.main_menu ul li a:hover {
+  color: #222;
+  background: #fff;
+}
+
+.main_menu ul li:last-child {
+  margin-left: 40px;
+  position: relative;
+}
+
+.main_menu ul li:last-child::after {
+  position: absolute;
+  content: '';
+  top: 12px;
+  left: -22px;
+  width: 1px;
+  height: 35px;
+  background: #adadad;
+}
+
+.main_menu ul li:last-child a i {
+  background: #adadad;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+.main_menu ul li:last-child a i:hover {
+  background: #1BADCF;
+}
+
+.main_menu .navbar-brand {
+  width: 245px;
+  height: 85px;
+  background: #323232;
+  text-align: center;
+  line-height: 85px;
+  -webkit-transform: skewX(-35deg);
+          transform: skewX(-35deg);
+  position: relative;
+}
+
+.main_menu .navbar-brand img {
+  -webkit-transform: skewX(35deg);
+          transform: skewX(35deg);
+}
+
+.main_menu .navbar-brand::after, .main_menu .navbar-brand::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: #020202;
+}
+
+.main_menu .navbar-brand::after {
+  left: 0;
+}
+
+.main_menu .navbar-brand::before {
+  right: 0;
+}
+
+/*======================================================
+                    Header part End
+======================================================*/
+/*======================================================
+                    Banner part start
+======================================================*/
+#banner {
+  height: 925px;
+  position: relative;
+  text-align: center;
+}
+
+#banner .down_check {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background: rgba(27, 174, 207, 0.63);
+  z-index: 99;
+}
+
+#banner .down_check ul {
+  line-height: 100px;
+}
+
+#banner .down_check ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner .down_check ul li a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+#banner .down_check ul li i {
+  font-size: 50px;
+  margin-right: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#banner .banner_layer {
+  position: relative;
+  z-index: 999;
+}
+
+#banner .banner_layer .banner_text {
+  width: 790px;
+  display: inline-block;
+}
+
+#banner .banner_layer .banner_text h1 {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px 5px #000;
+  padding-top: 300px;
+  padding-bottom: 20px;
+}
+
+#banner .banner_layer .banner_text p {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  line-height: 40px;
+  text-shadow: 1px 1px 5px #000;
+  text-transform: uppercase;
+}
+
+#banner .banner_layer .banner_text a {
+  padding: 10px 40px;
+  background: #ebebec;
+  border-radius: 20px;
+  color: #212529;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#banner .banner_layer .banner_text a:hover {
+  background: #1BADCF;
+  color: #fff;
+}
+
+/*======================================================
+                    Banner part End
+======================================================*/
+/*======================================================
+                    About part start
+======================================================*/
+#about {
+  padding: 70px 0;
+}
+
+#about .common_heading {
+  text-align: center;
+}
+
+#about .common_heading h2 {
+  color: #1BADCF;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+}
+
+#about .about_img {
+  text-align: center;
+}
+
+#about .about_img img {
+  width: 475px;
+}
+
+#about .about_text {
+  padding-top: 20px;
+}
+
+#about .about_text h3 {
+  color: #212529;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
+#about .about_text p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 40px;
+}
+
+#about .about_text img {
+  padding: 15px 0 15px 35px;
+}
+
+#about .about_text h5 {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/*======================================================
+                    About part start
+======================================================*/
+/*======================================================
+                    Info part start
+======================================================*/
+#info {
+  padding: 80px 0 0;
+  background: #e9fbff;
+  text-align: center;
+}
+
+#info .common_heading {
+  margin-bottom: 95px;
+}
+
+#info .common_heading h2 {
+  color: #1BADCF;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#info .common_heading p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#info .info_box {
+  padding: 76px 18px 52px;
+  border: 2px solid #1BADCF;
+  background: #FDFBEB;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+#info .info_box img {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#info .info_box h3 {
+  color: #1BADCF;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+#info .info_box p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 16px;
+}
+
+#info .info_box a {
+  padding: 7px 15px;
+  background: #1BADCF;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#info .info_box a:hover {
+  background: #5D5D5D;
+}
+
+/*======================================================
+                    Info part start
+======================================================*/
+/*======================================================
+                    Info part start
+======================================================*/
+#service {
+  padding: 60px 60px 60px 75px;
+  text-align: center;
+}
+
+#service .common_heading h2 {
+  color: #1BADCF;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#service .common_heading p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+#service .service_box ul li {
+  width: 555px;
+  height: 336px;
+  overflow: hidden;
+  margin: 10px 15px;
+  position: relative;
+  background: #3085a3;
+}
+
+#service .service_box ul li img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+  width: 100%;
+  height: 100%;
+  opacity: .8;
+}
+
+#service .service_box ul li:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: .2;
+}
+
+#service .service_box ul li:hover h5 {
+  visibility: hidden;
+}
+
+#service .service_box ul li:hover p {
+  visibility: visible;
+}
+
+#service .service_box ul li:hover {
+  background: rgba(27, 173, 207, 0.8);
+  cursor: pointer;
+  outline-offset: -15px;
+  outline: 2px solid white;
+}
+
+#service .service_box ul h5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px 15px;
+  background: #1badcf;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+#service .service_box ul p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  visibility: hidden;
+  width: 475px;
+  letter-spacing: 1px;
+}
+
+/*======================================================
+                    Info part start
+======================================================*/
+/*======================================================
+                    kunden part start
+======================================================*/
+#kunden {
+  padding: 60px 0;
+}
+
+#kunden .common_heading {
+  text-align: center;
+}
+
+#kunden .common_heading h2 {
+  color: #1BADCF;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#kunden .common_heading p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+
+#kunden .box_top {
+  background: rgba(27, 173, 207, 0.3);
+  padding: 36px 20px 45px;
+  height: 216px;
+  margin-bottom: 34px;
+  margin-top: 23px;
+}
+
+#kunden .box_top ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#kunden .box_top ul li i {
+  margin-right: 15px;
+  color: #1BADCF;
+  font-size: 20px;
+}
+
+#kunden .box_top ul li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
+}
+
+#kunden .box_bottom {
+  text-align: center;
+  background: rgba(27, 173, 207, 0.3);
+  padding: 20px 65px;
+  height: 290px;
+}
+
+#kunden .box_bottom img {
+  width: 140px;
+}
+
+#kunden .box_bottom h3 {
+  color: #1BADCF;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-top: 14px;
+}
+
+#kunden .box_bottom p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-top: 5px;
+}
+
+#kunden .box_bottom a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#kunden .box_bottom a:hover {
+  text-decoration: underline;
+}
+
+/*======================================================
+                    kunden part end
+======================================================*/
+/*======================================================
+                referenzen part start
+======================================================*/
+#referenzen {
+  padding: 60px 0;
+}
+
+#referenzen .common_heading {
+  text-align: center;
+}
+
+#referenzen .common_heading h2 {
+  color: #1BADCF;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+#referenzen .common_heading p {
+  color: #212529;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 50px;
+  width: 1080px;
+  display: inline-block;
+}
+
+#referenzen .referenzen_box {
+  width: 343px;
+  height: 147px;
+  -webkit-box-shadow: 0px 1px 15px #c6c6c6;
+          box-shadow: 0px 1px 15px #c6c6c6;
+  margin-bottom: 40px;
+}
+
+/*======================================================
+                referenzen part end
+======================================================*/
+/*======================================================
+                referenzen part start
+======================================================*/
+#kontakt {
+  padding: 70px 0;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+#kontakt::after {
+  position: absolute;
+  content: '';
+  background: rgba(27, 173, 207, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#kontakt ul li:first-child {
+  font-size: 30px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  line-height: 62px;
+  background: #fff;
+  margin: 0 auto;
+  color: #1BADCF;
+  margin-bottom: 35px;
+}
+
+#kontakt ul li p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#kontakt ul li p i {
+  color: rgba(0, 0, 0, 0.8);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#kontakt ul li p a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+#kontakt ul li:last-child i {
+  margin-left: -10px;
+  cursor: pointer;
+}
+
+/*======================================================
+                referenzen part end
+======================================================*/
+/*======================================================
+                map part start
+======================================================*/
+/*======================================================
+                map part end
+======================================================*/
+/*======================================================
+                map part start
+======================================================*/
+#privacy {
+  padding: 32px 0;
+  text-align: center;
+  background: #1BADCF;
+}
+
+#privacy .privacy_text {
+  position: relative;
+}
+
+#privacy .privacy_text a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding: 0 30px;
+}
+
+#privacy .privacy_text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 654px;
+  width: 2px;
+  height: 25px;
+  background: #fff;
+}
+
+/*======================================================
+                map part end
+======================================================*/
+/*======================================================
+                map part start
+======================================================*/
+#review {
+  padding: 70px 0;
+  background: #E9FBFF;
+}
+
+#review .common_heading {
+  margin-bottom: 30px;
+}
+
+#review .common_heading h2 {
+  color: #1BADCF;
+  font-size: 28px;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#review .review_main {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0px 1px 15px #c6c6c6;
+          box-shadow: 0px 1px 15px #c6c6c6;
+}
+
+#review .review_main .logo_box .logo_box_left img {
+  width: 200px;
+}
+
+#review .review_main .logo_box .logo_box_left p {
+  color: #212529;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  padding-top: 7px;
+}
+
+#review .review_main .logo_box .logo_box_right a {
+  padding: 10px 15px;
+  background: #1BADCF;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  -webkit-box-shadow: 0px 1px 15px #c6c6c6;
+          box-shadow: 0px 1px 15px #c6c6c6;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#review .review_main .logo_box .logo_box_right a:hover {
+  background: #E9FBFF;
+  color: #1BADCF;
+}
+
+#review .review_main .review_slider {
+  margin-top: 5px;
+}
+
+#review .review_main .review_slider .review_img {
+  margin: 20px;
+  background: #000;
+}
+
+#review .review_main .review_slider .prev_arrow,
+#review .review_main .review_slider .next_arrow {
+  font-size: 28px;
+  color: #444;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: 2;
+}
+
+#review .review_main .review_slider .prev_arrow {
+  left: -10px;
+}
+
+#review .review_main .review_slider .next_arrow {
+  right: -10px;
+}
+
+/*======================================================
+                map part end
+======================================================*/
+/*======================================================
+                    Title part start
+======================================================*/
+#footer {
+  padding: 80px 0;
+}
+
+#footer .footer_text h3 {
+  color: #343434;
+  font-size: 32px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 22px;
+}
+
+#footer .footer_text p {
+  color: #343434;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 32px;
+  width: 425px;
+}
+
+#footer .footer_text ul li a {
+  color: #343434;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 40px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#footer .footer_text ul li a:hover {
+  color: #9BAF06;
+}
+
+#footer .footer_text1 ul li a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 42px;
+  text-align: center;
+  color: #1BADCF;
+  background: #343434;
+  margin: 0 8px;
+  margin-top: 30px;
+  -webkit-transition: all linear .3s;
+  transition: all linear .3s;
+}
+
+#footer .footer_text1 ul li a:hover {
+  background: #9BAF06;
+  color: #fff;
+}
+
+/*======================================================
+                    Title part end
+======================================================*/
+/*# sourceMappingURL=style.css.map */

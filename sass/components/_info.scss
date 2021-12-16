@@ -1,0 +1,65 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                    Info part start
+======================================================*/
+#info {
+    padding: 80px 0 0;
+    background: #e9fbff;
+    text-align: center;
+
+    .common_heading {
+        margin-bottom: 95px;
+        h2 {
+            @include fns($clr1, 32px, 700, $ff1);
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fns($clr2, 16px, 400, $ff1);
+        }
+    }
+    
+    .info_box {
+        padding: 76px 18px 52px;
+        border: 2px solid $clr1;
+        background: #FDFBEB;
+        position: relative;
+        margin-bottom: 80px;
+        
+        img {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        h3 {
+            @include fns($clr1, 22px, 500, $ff1);
+            padding-bottom: 20px;
+        }
+
+        p {
+            @include fns($clr2, 16px, 400, $ff1);
+            padding-bottom: 16px;
+        }
+
+        a {
+            padding: 7px 15px;
+            background: $clr1;
+            @include fns(#fff, 12px, 400, $ff1);
+            text-transform: uppercase;
+            transition: all linear .3s;
+
+            &:hover {
+                background: #5D5D5D;
+            }
+        }
+    }
+}
+
+/*======================================================
+                    Info part start
+======================================================*/

@@ -1,0 +1,95 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                    Banner part start
+======================================================*/
+#banner {
+    height: 925px;
+    position: relative;
+    text-align: center;
+
+    .down_check {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background: rgba(27, 174, 207, 0.63);
+        z-index: 99;
+
+        ul {
+            line-height: 100px;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    @include fns(#fff, 24px, 600, $ff1);
+                }
+
+                i {
+                    font-size: 50px;
+                    margin-right: 20px;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    .banner_layer {
+        position: relative;
+        z-index: 999;
+
+        .banner_text {
+            width: 790px;
+            display: inline-block;
+
+            h1 {
+                @include fns(#fff, 72px, 700, $ff1);
+                text-shadow: 1px 1px 5px #000;
+                padding-top: 300px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                @include fns(#fff, 26px, 500, $ff1);
+                line-height: 40px;
+                text-shadow: 1px 1px 5px #000;
+                text-transform: uppercase;
+            }
+
+            a {
+                padding: 10px 40px;
+                background: #ebebec;
+                border-radius: 20px;
+                @include fns($clr2, 28px, 800, $ff1);
+                margin-top: 60px;
+                transition: all linear .3s;
+
+                &:hover {
+                    background: $clr1;
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+
+}
+
+/*======================================================
+                    Banner part End
+======================================================*/

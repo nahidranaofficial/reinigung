@@ -1,0 +1,54 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                    About part start
+======================================================*/
+#about {
+    padding: 70px 0;
+
+    .common_heading {
+        text-align: center;
+
+        h2 {
+            @include fns($clr1, 28px, 700, $ff1);
+            text-transform: uppercase;
+            padding-bottom: 25px;
+        }
+    }
+
+    .about_img {
+        text-align: center;
+        img {
+            width: 475px;
+        }
+    }
+
+    .about_text {
+        padding-top: 20px;
+
+        h3 {
+            @include fns($clr2, 24px, 700, $ff1);
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fns($clr2, 16px, 400, $ff1);
+            padding-bottom: 40px;
+        }
+
+        img {
+            padding: 15px 0 15px 35px;
+        }
+
+        h5 {
+            @include fns($clr2, 16px, 700, $ff1);
+            text-align: center;
+        }
+    }
+
+}
+
+/*======================================================
+                    About part start
+======================================================*/

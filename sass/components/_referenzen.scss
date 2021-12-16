@@ -1,0 +1,37 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                referenzen part start
+======================================================*/
+#referenzen {
+    padding: 60px 0;
+
+    .common_heading {
+        text-align: center;
+
+        h2 {
+            @include fns($clr1, 28px, 700, $ff1);
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fns($clr2, 16px, 400, $ff1);
+            padding-bottom: 50px;
+            width: 1080px;
+            display: inline-block;
+        }
+    }
+
+    .referenzen_box {
+        width: 343px;
+        height: 147px;
+        box-shadow: 0px 1px 15px #c6c6c6;
+        margin-bottom: 40px;
+    }
+}
+
+/*======================================================
+                referenzen part end
+======================================================*/

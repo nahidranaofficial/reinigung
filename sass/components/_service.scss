@@ -1,0 +1,92 @@
+@import '../mixis/mixins';
+@import '../varibale/varibales';
+
+/*======================================================
+                    Info part start
+======================================================*/
+#service {
+    padding: 60px 60px 60px 75px;
+    text-align: center;
+
+    .common_heading {
+        h2 {
+            @include fns($clr1, 32px, 700, $ff1);
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+
+        p {
+            @include fns($clr2, 16px, 400, $ff1);
+            padding-bottom: 20px;
+        }
+    }
+
+    .service_box {
+        ul {
+            li {
+                width: 555px;
+                height: 336px;
+                overflow: hidden;
+                margin: 10px 15px;
+                position: relative;
+                background: #3085a3;
+
+                img {
+                    transform: scale(1.1);
+                    transition: all linear .3s;
+                    width: 100%;
+                    height: 100%;
+                    opacity: .8;
+                }
+
+                &:hover img {
+                    transform: scale(1);
+                    opacity: .2;
+                }
+
+                &:hover h5 {
+                    visibility: hidden;
+                }
+
+                &:hover p {
+                    visibility: visible;
+                }
+
+                &:hover{
+                    background: rgba(27,173,207,0.8);
+                    cursor: pointer;
+                    outline-offset: -15px;
+                    outline: 2px solid rgba(255, 255, 255, 1);
+                }
+
+            }
+
+            h5 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                padding: 10px 15px;
+                background: #1badcf;
+                @include fns(#fff, 24px, 700, $ff1);
+                text-transform: uppercase;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                @include fns(#fff, 16px, 400, $ff1);
+                visibility: hidden;
+                width: 475px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+}
+
+/*======================================================
+                    Info part start
+======================================================*/
